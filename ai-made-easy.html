@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your guide to understanding and using AI tools, agents, and automation for everyday life and business.">
+  <title>AI Made Easy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    const prompts = [
+      "Act as a podcast consultant. How can I add humor and keep listeners engaged in my tech podcast?",
+      "Act as a productivity coach. How should I structure my day to get the most done using AI tools?",
+      "Act as a chef. What unique recipe can I try tonight based on what's in my fridge?",
+      "Act as a travel planner. Suggest a 3-day weekend trip for someone who loves food and history.",
+      "Act as a social media expert. How can I grow my personal brand using AI-generated content?",
+      "Act as a creative writer. Help me write a sci-fi short story opening set in a world ruled by AI.",
+      "Act as a debate coach. Teach me how to argue both for and against the use of AI in schools.",
+      "Act as a journaling assistant. Prompt me with 3 reflective questions to review my week."
+    ];
+    function getPrompt() {
+      return prompts[Math.floor(Math.random() * prompts.length)];
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-200 text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">AI Made Easy</h1>
+      <nav class="space-x-4">
+        <a href="#tools" class="text-gray-700 hover:text-indigo-600">Tools</a>
+        <a href="#use-cases" class="text-gray-700 hover:text-indigo-600">Use Cases</a>
+        <a href="#learn" class="text-gray-700 hover:text-indigo-600">Learn</a>
+        <a href="#talk-to-ai" class="text-gray-700 hover:text-indigo-600">Talk to AI</a>
+        <a href="#blog" class="text-gray-700 hover:text-indigo-600">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Prompt of the Day -->
+  <section class="bg-yellow-50 py-16" id="prompt">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-yellow-800 mb-4">🎯 Prompt of the Day</h2>
+      <img src="https://source.unsplash.com/featured/?ai,future" alt="AI Prompt" class="w-full h-64 object-cover rounded-xl mb-6 shadow">
+      <p class="text-lg text-gray-700 mb-4">Try this in ChatGPT, Claude, or NotebookLM:</p>
+      <div class="bg-white p-6 rounded-xl shadow text-lg italic text-gray-800 max-w-2xl mx-auto border-l-4 border-yellow-400" id="promptBox">
+        Loading prompt...
+      </div>
+      <p class="text-sm text-gray-500 mt-4">Refresh the page to get another one!</p>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-50 py-20 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <img src="https://source.unsplash.com/featured/?technology,abstract" alt="AI Hero" class="rounded-xl mb-6 shadow-md w-full h-64 object-cover">
+      <h2 class="text-4xl font-bold mb-4 text-indigo-800">AI, But Make It Easy</h2>
+      <p class="text-lg text-gray-700 mb-6">Understand, explore, and use AI tools with confidence. Simple guides, real use cases, and the best tools – all in one place.</p>
+      <a href="#learn" class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 transition">Start Learning</a>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="bg-white py-20 text-center" id="tools">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-10">🛠️ AI Tools Directory</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-gradient-to-br from-white to-gray-100 p-6 rounded-xl shadow hover:shadow-2xl transition transform hover:scale-105">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" class="w-12 h-12 mx-auto mb-4">
+          <h3 class="font-bold text-lg">ChatGPT</h3>
+          <p class="text-sm text-gray-600">Conversational AI for writing, coding, ideation, and more.</p>
+        </div>
+        <div class="bg-gradient-to-br from-white to-gray-100 p-6 rounded-xl shadow hover:shadow-2xl transition transform hover:scale-105">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png" alt="Notion AI" class="w-12 h-12 mx-auto mb-4">
+          <h3 class="font-bold text-lg">Notion AI</h3>
+          <p class="text-sm text-gray-600">Write, summarize, and plan within your workspace.</p>
+        </div>
+        <div class="bg-gradient-to-br from-white to-gray-100 p-6 rounded-xl shadow hover:shadow-2xl transition transform hover:scale-105">
+          <img src="https://seeklogo.com/images/M/midjourney-logo-5AB20F0175-seeklogo.com.png" alt="Midjourney" class="w-12 h-12 mx-auto mb-4">
+          <h3 class="font-bold text-lg">Midjourney</h3>
+          <p class="text-sm text-gray-600">AI image generation with high creativity and detail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="bg-indigo-100 py-20 text-center" id="use-cases">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-indigo-800 mb-6">💡 Real-World Use Cases</h2>
+      <p class="text-gray-700 mb-4">Explore examples like how a personal trainer uses AI to plan programs, or how small business owners automate customer support.</p>
+      <p class="text-sm text-gray-600">Coming soon...</p>
+    </div>
+  </section>
+
+  <!-- Talk to AI Section -->
+  <section class="bg-white py-20 text-center" id="talk-to-ai">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">🧠 How to Talk to AI</h2>
+      <p class="text-gray-700 mb-4">New to AI? Learn how to structure your thoughts so you can get better answers from language models like ChatGPT, Claude, Gemini, and more.</p>
+      <p class="text-sm text-gray-500">Full guide launching soon...</p>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('promptBox').textContent = getPrompt();
+    });
+  </script>
+</body>
+</html>
 
