@@ -6,8 +6,23 @@
   <meta name="description" content="Your guide to understanding and using AI tools, agents, and automation for everyday life and business.">
   <title>AI Made Easy</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    const prompts = [
+      "Act as a podcast consultant. How can I add humor and keep listeners engaged in my tech podcast?",
+      "Act as a productivity coach. How should I structure my day to get the most done using AI tools?",
+      "Act as a chef. What unique recipe can I try tonight based on what's in my fridge?",
+      "Act as a travel planner. Suggest a 3-day weekend trip for someone who loves food and history.",
+      "Act as a social media expert. How can I grow my personal brand using AI-generated content?",
+      "Act as a creative writer. Help me write a sci-fi short story opening set in a world ruled by AI.",
+      "Act as a debate coach. Teach me how to argue both for and against the use of AI in schools.",
+      "Act as a journaling assistant. Prompt me with 3 reflective questions to review my week."
+    ];
+    function getPrompt() {
+      return prompts[Math.floor(Math.random() * prompts.length)];
+    }
+  </script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gradient-to-br from-gray-50 to-gray-200 text-gray-900 font-sans">
 
   <!-- Header -->
   <header class="bg-white shadow sticky top-0 z-50">
@@ -27,108 +42,54 @@
   <section class="bg-yellow-50 py-16" id="prompt">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-4xl font-bold text-yellow-800 mb-4">🎯 Prompt of the Day</h2>
-      <img src="https://source.unsplash.com/featured/?ai,idea" alt="AI Prompt" class="w-full h-64 object-cover rounded-xl mb-6 shadow">
+      <img src="https://source.unsplash.com/featured/?chatbot,ai" alt="AI Prompt" class="w-full h-64 object-cover rounded-xl mb-6 shadow">
       <p class="text-lg text-gray-700 mb-4">Try this in ChatGPT, Claude, or NotebookLM:</p>
-      <div class="bg-white p-6 rounded-xl shadow text-lg italic text-gray-800 max-w-2xl mx-auto border-l-4 border-yellow-400">
-        "Act as a podcast consultant. How can I add humor and keep listeners engaged in my tech podcast?"
+      <div class="bg-white p-6 rounded-xl shadow text-lg italic text-gray-800 max-w-2xl mx-auto border-l-4 border-yellow-400" id="promptBox">
+        Loading prompt...
       </div>
       <p class="text-sm text-gray-500 mt-4">Refresh the page to get another one!</p>
     </div>
   </section>
 
   <!-- Hero Section -->
-  <section class="bg-indigo-100 py-20 text-center">
+  <section class="bg-indigo-50 py-20 text-center">
     <div class="max-w-3xl mx-auto px-4">
-      <img src="https://source.unsplash.com/featured/?technology,brain" alt="AI Hero" class="rounded-xl mb-6 shadow-md w-full h-64 object-cover">
-      <h2 class="text-4xl font-bold mb-4">AI, But Make It Easy</h2>
+      <img src="https://source.unsplash.com/featured/?artificialintelligence,futuristic" alt="AI Hero" class="rounded-xl mb-6 shadow-md w-full h-64 object-cover">
+      <h2 class="text-4xl font-bold mb-4 text-indigo-800">AI, But Make It Easy</h2>
       <p class="text-lg text-gray-700 mb-6">Understand, explore, and use AI tools with confidence. Simple guides, real use cases, and the best tools – all in one place.</p>
       <a href="#learn" class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 transition">Start Learning</a>
     </div>
   </section>
 
-  <!-- Tools Directory -->
-  <section class="py-16 px-4 max-w-7xl mx-auto" id="tools">
-    <h2 class="text-3xl font-bold text-center mb-12">🧰 AI Tools Directory</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-indigo-700 mb-2">ChatGPT</h3>
-        <p class="text-gray-600 mb-2">Conversational AI assistant by OpenAI. Great for brainstorming, writing, and Q&A.</p>
-        <a href="https://chat.openai.com/" target="_blank" class="text-indigo-600 hover:underline">Try ChatGPT</a>
-      </div>
-      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Claude</h3>
-        <p class="text-gray-600 mb-2">Helpful AI by Anthropic. Strong at analysis, summaries, and safety-minded conversations.</p>
-        <a href="https://claude.ai/" target="_blank" class="text-indigo-600 hover:underline">Try Claude</a>
-      </div>
-      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Perplexity</h3>
-        <p class="text-gray-600 mb-2">Answer engine powered by AI. Great for research with cited sources.</p>
-        <a href="https://www.perplexity.ai/" target="_blank" class="text-indigo-600 hover:underline">Try Perplexity</a>
-      </div>
+  <!-- Upcoming Sections (to be filled) -->
+  <section class="bg-white py-20 text-center" id="tools">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">🛠️ AI Tools Directory</h2>
+      <p class="text-gray-700 mb-4">We're curating a hand-picked selection of tools for everything from writing and visuals to automation and productivity.</p>
+      <p class="text-sm text-gray-500">Coming soon...</p>
     </div>
   </section>
 
-  <!-- Use Cases -->
-  <section class="py-20 px-4 bg-white" id="use-cases">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">💡 Real Use Cases</h2>
-      <p class="text-gray-700 text-lg mb-6">Explore how AI can save you time, boost creativity, and simplify work/life.</p>
-      <ul class="space-y-3 text-left max-w-xl mx-auto text-lg">
-        <li>✅ Draft emails, blog posts, or social media captions</li>
-        <li>✅ Get summaries of long articles or documents</li>
-        <li>✅ Plan your week, meals, or travel</li>
-        <li>✅ Research faster with smart Q&A</li>
-        <li>✅ Automate routine business tasks</li>
-      </ul>
+  <section class="bg-indigo-100 py-20 text-center" id="use-cases">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-indigo-800 mb-6">💡 Real-World Use Cases</h2>
+      <p class="text-gray-700 mb-4">Explore examples like how a personal trainer uses AI to plan programs, or how small business owners automate customer support.</p>
+      <p class="text-sm text-gray-600">Coming soon...</p>
     </div>
   </section>
 
-  <!-- Learn Section -->
-  <section class="py-20 px-4 bg-indigo-50" id="learn">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">📘 Learn the Basics</h2>
-      <p class="text-gray-700 text-lg mb-6">New to AI? Start here with easy guides:</p>
-      <ul class="space-y-3 text-left max-w-xl mx-auto">
-        <li><a href="#" class="text-indigo-600 hover:underline">What is AI, really?</a></li>
-        <li><a href="#" class="text-indigo-600 hover:underline">How to write a good AI prompt</a></li>
-        <li><a href="#" class="text-indigo-600 hover:underline">What are AI agents?</a></li>
-      </ul>
+  <section class="bg-white py-20 text-center" id="talk-to-ai">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">🧠 How to Talk to AI</h2>
+      <p class="text-gray-700 mb-4">New to AI? Learn how to structure your thoughts so you can get better answers from language models like ChatGPT, Claude, Gemini, and more.</p>
+      <p class="text-sm text-gray-500">Full guide launching soon...</p>
     </div>
   </section>
 
-  <!-- Talk to AI -->
-  <section class="py-20 px-4 bg-white" id="talk-to-ai">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">🗣️ Talk to AI</h2>
-      <p class="text-gray-700 text-lg mb-6">Explore different ways to use conversational AI for fun or productivity:</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-gray-50 p-4 rounded-xl shadow">
-          <h3 class="font-semibold text-indigo-700">ChatGPT</h3>
-          <p class="text-sm">Brainstorming, writing, Q&A, coding help.</p>
-          <a href="https://chat.openai.com/" target="_blank" class="text-indigo-600 text-sm hover:underline">Open ChatGPT</a>
-        </div>
-        <div class="bg-gray-50 p-4 rounded-xl shadow">
-          <h3 class="font-semibold text-indigo-700">Claude</h3>
-          <p class="text-sm">Safer conversations, longer context, thoughtful answers.</p>
-          <a href="https://claude.ai/" target="_blank" class="text-indigo-600 text-sm hover:underline">Open Claude</a>
-        </div>
-        <div class="bg-gray-50 p-4 rounded-xl shadow">
-          <h3 class="font-semibold text-indigo-700">Perplexity</h3>
-          <p class="text-sm">AI with cited sources – great for research.</p>
-          <a href="https://www.perplexity.ai/" target="_blank" class="text-indigo-600 text-sm hover:underline">Open Perplexity</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog Section -->
-  <section class="py-20 px-4 bg-indigo-100" id="blog">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">📝 Blog</h2>
-      <p class="text-gray-700 text-lg mb-6">Insights, updates, and thought leadership around AI and automation.</p>
-      <p class="text-gray-500 italic">Coming soon...</p>
-    </div>
-  </section>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('promptBox').textContent = getPrompt();
+    });
+  </script>
 </body>
 </html>
