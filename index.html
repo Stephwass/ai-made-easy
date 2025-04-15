@@ -6,21 +6,6 @@
   <meta name="description" content="Your guide to understanding and using AI tools, agents, and automation for everyday life and business.">
   <title>AI Made Easy</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script>
-    const prompts = [
-      "Act as a podcast consultant. How can I add humor and keep listeners engaged in my tech podcast?",
-      "Act as a productivity coach. How should I structure my day to get the most done using AI tools?",
-      "Act as a chef. What unique recipe can I try tonight based on what's in my fridge?",
-      "Act as a travel planner. Suggest a 3-day weekend trip for someone who loves food and history.",
-      "Act as a social media expert. How can I grow my personal brand using AI-generated content?",
-      "Act as a creative writer. Help me write a sci-fi short story opening set in a world ruled by AI.",
-      "Act as a debate coach. Teach me how to argue both for and against the use of AI in schools.",
-      "Act as a journaling assistant. Prompt me with 3 reflective questions to review my week."
-    ];
-    function getPrompt() {
-      return prompts[Math.floor(Math.random() * prompts.length)];
-    }
-  </script>
 </head>
 <body class="bg-gradient-to-br from-gray-50 to-gray-200 text-gray-900 font-sans">
 
@@ -38,23 +23,10 @@
     </div>
   </header>
 
-  <!-- Prompt of the Day -->
-  <section class="bg-yellow-50 py-16" id="prompt">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold text-yellow-800 mb-4">🎯 Prompt of the Day</h2>
-      <img src="https://source.unsplash.com/1600x900/?futuristic,interface" alt="AI Prompt" class="w-full h-64 object-cover rounded-xl mb-6 shadow">
-      <p class="text-lg text-gray-700 mb-4">Try this in ChatGPT, Claude, or NotebookLM:</p>
-      <div class="bg-white p-6 rounded-xl shadow text-lg italic text-gray-800 max-w-2xl mx-auto border-l-4 border-yellow-400" id="promptBox">
-        Loading prompt...
-      </div>
-      <p class="text-sm text-gray-500 mt-4">Refresh the page to get another one!</p>
-    </div>
-  </section>
-
   <!-- Hero Section -->
   <section class="bg-gradient-to-r from-indigo-600 to-purple-600 py-20 text-center text-white">
     <div class="max-w-3xl mx-auto px-4">
-      <img src="https://source.unsplash.com/1600x900/?ai,technology" alt="AI Hero" class="rounded-xl mb-6 shadow-md w-full h-64 object-cover">
+      <img src="https://source.unsplash.com/1600x900/?ai,futuristic" alt="AI Hero" class="rounded-xl mb-6 shadow-md w-full h-64 object-cover">
       <h2 class="text-4xl font-bold mb-4">AI, But Make It Easy</h2>
       <p class="text-lg mb-6">Understand, explore, and use AI tools with confidence. Simple guides, real use cases, and the best tools – all in one place.</p>
       <a href="#learn" class="bg-white text-indigo-600 px-6 py-3 rounded-xl hover:bg-gray-100 transition">Start Learning</a>
@@ -103,10 +75,5 @@
     </div>
   </section>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('promptBox').textContent = getPrompt();
-    });
-  </script>
 </body>
 </html>
